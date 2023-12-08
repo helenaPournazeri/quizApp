@@ -1,3 +1,55 @@
+.title-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .end-title {
     color: #6757d9;
+    font-size: 40px;
+}
+#your-score {
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff;
+    padding: 5px 7px;
+    background-color: #6757d9;
+    border-radius: 10px;
+}
+input {
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    outline: none;
+    
+}
+input:focus {
+    border-color: #6757d9;
+}
+a, button {
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid aliceblue;
+    padding: 10px;
+    outline: none;
+    background-color: #fff;
+    text-decoration: none;
+    color: #6757d9;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    transition: all 0.2s ease-in;
+}
+a:hover , button:hover {
+    background-color: #6757d9;
+    color: #fff;
 }

@@ -22,6 +22,12 @@
     display: none;
     width: 700px;
 }
+#time {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #6757d9;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -98,14 +104,14 @@ h3 {
 }
 
 .correct-answer {
-    background-color: green;
+    background-color: rgb(106, 235, 106);
 }
 .incorrect-answer {
-    background-color: red;
+    background-color: rgb(242, 73, 73);
 }
 .correct-answer:hover {
-    background-color: green;
+    background-color: rgb(106, 235, 106);
 }
 .incorrect-answer:hover {
-    background-color: red;
+    background-color: rgb(242, 73, 73);
 }

@@ -1,7 +1,7 @@
 import formatData from "./helper.js";
 
-
-const URL = "https://opentdb.com/api.php?amount=10&difficulty=medium&type=multiple"
+const level = JSON.parse(localStorage.getItem("level")) || "medium";
+const URL = `https://opentdb.com/api.php?amount=10&difficulty=${level}&type=multiple`
 const loader = document.getElementById("loader") 
 const container = document.getElementById("container") 
 const scoreText = document.getElementById("score")
@@ -27,6 +27,7 @@ const showQuestion = () => {
     answerList.forEach((button,index) => {
         button.innerText = answers[index]
     })
+    console.log(formattedData)
 }
 
 const checkAnswer = (event, index) => {
@@ -75,7 +76,7 @@ const fetchData = async () => {
 const start = () => {
     showQuestion(formattedData)
     loader.style.display = "none"
-    container.style.display = "block"
+    container.style.display = "block";
 }
 
 window.addEventListener("load", fetchData);
